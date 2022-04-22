@@ -1,15 +1,23 @@
-let monto= parseInt(prompt('ingrese el monto'))
-let cuotas= parseInt(prompt('ingrese cantidad de cuotas (pueden ser desde 1 a 12)'))
-let pagoTotal=0
-function pagoCuotas(monto,cuotas){
-    if (cuotas<=6){
-        pagoTotal=monto/cuotas;
-        alert('No tiene recargo, por lo tanto, el monto a abonar en '+cuotas+' meses es de '+pagoTotal+'.')
-    }else if (cuotas<=12){
-        pagoTotal=(monto/cuotas)*1.1;
-        alert('Tiene un recargo del 10%. El monto a abonar en '+cuotas+' meses es de '+pagoTotal+'.')
-    }else{
-        alert('Ingrese cantidad de cuotas válido')
+//ponemos un class para obtener las caracteristicas del objeto
+class Producto {
+   //creacion de instancias - objeto
+    constructor(tipo, precio, stock) {
+        //propiedades
+        this.tipo = tipo;
+        this.precio = precio;
+        this.stock = stock;
+    }
+    //metodo - generalmente son acciones
+    mostrar() {
+        console.log(`El producto de tipo ${this.tipo} fue ingresado`)
     }
 }
-pagoCuotas(monto,cuotas);
+
+const producto1 = new Producto("Porta Sahumerio", 250, 12)
+
+const producto2 = new Producto("Planta con Maceta", 560, 8)
+
+producto1.mostrar()
+producto2.mostrar()
+const SeccionDeco = [producto1, producto2]
+console.log(SeccionDeco)

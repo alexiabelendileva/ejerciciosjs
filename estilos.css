@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: brown;
+    font-family: 'Quicksand', sans-serif;
+}
+.form{
+    width: 300px;
+    background: linear-gradient(to bottom, black, rgb(94, 24, 24), rgb(94, 24, 24), black);
+    padding: 23px;
+    margin:auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    color: whitesmoke;
+    text-align:center;
+}
+.formulario{
+    width: 85%;
+    background: none;
+    border: none;
+    border-bottom: 2px dashed rgb(0, 0, 0);
+    margin: 16px;
+    font-family: 'Quicksand', sans-serif;
+    color: whitesmoke;
+}
+::placeholder{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+.sumarprod{
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    background: black;
+    color: whitesmoke;
+    border: none;
+    padding: 10px;
+    margin: 14px 0;
+    font-size: 14px;
+    border-radius: 7px;
+    box-shadow: 0 0px 20px rgba(255, 255, 255, 0.233);
+}
+.sumarprod:hover{
+    background-color: rgb(134, 9, 9);
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: scale(.9);
+    transition: all 0.9S;
+    cursor: pointer;
+}
+.block{
+    display: inline-block;
+}
