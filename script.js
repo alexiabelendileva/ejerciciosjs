@@ -1,23 +1,38 @@
-//ponemos un class para obtener las caracteristicas del objeto
-class Producto {
-   //creacion de instancias - objeto
-    constructor(tipo, precio, stock) {
+function capturar() {
+    function Producto(nombre, precio, stock) {
         //propiedades
-        this.tipo = tipo;
+        this.nombre = nombre;
         this.precio = precio;
         this.stock = stock;
+        this.seccion = 3;
     }
-    //metodo - generalmente son acciones
-    mostrar() {
-        console.log(`El producto de tipo ${this.tipo} fue ingresado`)
+
+    let nombreProd = document.getElementById("nombre").value;
+    let precioProd = document.getElementById("precio").value;
+    let stockProd = document.getElementById("stock").value;
+    if (isNaN(nombreProd)) {
+        console.log(nombreProd)
+    } else {
+        alert('Ingrese únicamente palabras que identifiquen al producto')
     }
+    if (precioProd != isNaN && precioProd > -1) {
+        console.log(precioProd);
+    } else {
+        alert('ingrese números válidos para el precio')
+    }
+    if (stockProd != isNaN && stockProd > -1) {
+        console.log(stockProd);
+    } else {
+        alert('ingrese números válidos para el stock')
+    }
+
+    nuevoProd = new Producto(nombreProd, precioProd, stockProd);
+    console.log(nuevoProd);
+    agregoProd();
 }
+let guardarProd = []
 
-const producto1 = new Producto("Porta Sahumerio", 250, 12)
-
-const producto2 = new Producto("Planta con Maceta", 560, 8)
-
-producto1.mostrar()
-producto2.mostrar()
-const SeccionDeco = [producto1, producto2]
-console.log(SeccionDeco)
+function agregoProd() {
+    guardarProd.push(nuevoProd)
+    console.log(guardarProd)
+}

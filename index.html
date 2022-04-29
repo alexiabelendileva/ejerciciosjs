@@ -13,8 +13,10 @@
 <body>
     <section class="form">
         <h3>Escriba el producto a sumar al inventario</h3>
-        <input type="text" name="nombre" placeholder="Ingrese su producto" class="formulario  block">
-        <button type="submit" value="Sumarproducto" class="sumarprod  block">Sumar Producto</button>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su producto" class="formulario  block" required>
+        <input type="text" id="precio" name="precio" placeholder="Ingrese su precio" class="formulario  block" required>
+        <input type="text" id="stock" name="stock" placeholder="Ingrese su stock" class="formulario  block" required>
+        <button type="submit" value="Sumarproducto" class="sumarprod  block" onclick="capturar()">Sumar Producto</button>
     </section>
     <script src="script.js"></script>
 </body>

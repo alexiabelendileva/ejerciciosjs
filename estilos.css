@@ -4,17 +4,21 @@
     box-sizing: border-box;
 }
 body{
-    background: brown;
+    background-image: url(fondo.svg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-position:cover;
     font-family: 'Quicksand', sans-serif;
 }
 .form{
+    
     width: 300px;
     background: linear-gradient(to bottom, black, rgb(94, 24, 24), rgb(94, 24, 24), black);
     padding: 23px;
     margin:auto;
-    margin-top: 100px;
+    margin-top: 200px;
     border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    box-shadow: 3px 10px 20px rgba(0,0,0,0.5);
     color: whitesmoke;
     text-align:center;
 }
@@ -23,6 +27,7 @@ body{
     background: none;
     border: none;
     border-bottom: 2px dashed rgb(0, 0, 0);
+    outline: none;
     margin: 16px;
     font-family: 'Quicksand', sans-serif;
     color: whitesmoke;
@@ -32,6 +37,10 @@ body{
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 16px;
+}
+
+.block{
+    display: inline-block;
 }
 .sumarprod{
     font-family: 'Quicksand', sans-serif;
@@ -51,9 +60,7 @@ body{
     font-weight: bold;
     font-size: 14px;
     text-transform: scale(.9);
-    transition: all 0.9S;
+    transition: 0.8s ease-in-out all;
     cursor: pointer;
 }
-.block{
-    display: inline-block;
-}
+
