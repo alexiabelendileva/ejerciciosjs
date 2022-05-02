@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilos.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <title>Formulario</title>
 </head>
+
 <body>
+    <header>
+        <nav>
+            <form class="buscador" action="">
+                <input type="text">
+                <button>Buscar</button>
+            </form>
+        </nav>
+    </header>
     <section class="form">
         <h3>Escriba el producto a sumar al inventario</h3>
-        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su producto" class="formulario  block" required>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su producto" class="formulario  block"
+            required>
         <input type="text" id="precio" name="precio" placeholder="Ingrese su precio" class="formulario  block" required>
         <input type="text" id="stock" name="stock" placeholder="Ingrese su stock" class="formulario  block" required>
-        <button type="submit" value="Sumarproducto" class="sumarprod  block" onclick="capturar()">Sumar Producto</button>
+        <button type="submit" value="Sumarproducto" class="sumarprod  block" onclick="capturar()">Sumar
+            Producto</button>
     </section>
+    <div class="container">
+        <table class="table table-dark table-sm" id="tabla">
+            <tbody>
+                <thead>
+                    <tr>
+                        <th class="name">Nombre</th>
+                        <th class="price">Precio</th>
+                        <th class="stock">Stock</th>
+                    </tr>
+                </thead>
+            </tbody>
+          </table>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

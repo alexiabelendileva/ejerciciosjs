@@ -1,28 +1,64 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-image: url(fondo.svg);
     background-attachment: fixed;
     background-position: center center;
-    background-position:cover;
+    background-position: cover;
     font-family: 'Quicksand', sans-serif;
 }
-.form{
-    
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.buscador input {
+    background: none;
+    border: 2px solid black;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.buscador button {
+    background: none;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.buscador button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: scale(.9);
+    transition: 0.8s ease-in-out all;
+    cursor: pointer;
+}
+
+.form {
+
     width: 300px;
     background: linear-gradient(to bottom, black, rgb(94, 24, 24), rgb(94, 24, 24), black);
     padding: 23px;
-    margin:auto;
+    margin: auto;
     margin-top: 200px;
     border-radius: 20px;
-    box-shadow: 3px 10px 20px rgba(0,0,0,0.5);
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.5);
     color: whitesmoke;
-    text-align:center;
+    text-align: center;
 }
-.formulario{
+
+.formulario {
     width: 85%;
     background: none;
     border: none;
@@ -32,17 +68,19 @@ body{
     font-family: 'Quicksand', sans-serif;
     color: whitesmoke;
 }
-::placeholder{
+
+::placeholder {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 16px;
 }
 
-.block{
+.block {
     display: inline-block;
 }
-.sumarprod{
+
+.sumarprod {
     font-family: 'Quicksand', sans-serif;
     width: 100%;
     background: black;
@@ -54,7 +92,8 @@ body{
     border-radius: 7px;
     box-shadow: 0 0px 20px rgba(255, 255, 255, 0.233);
 }
-.sumarprod:hover{
+
+.sumarprod:hover {
     background-color: rgb(134, 9, 9);
     color: black;
     font-weight: bold;
@@ -63,4 +102,12 @@ body{
     transition: 0.8s ease-in-out all;
     cursor: pointer;
 }
+#tabla{
+    margin-left:-15px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.name, .precio, .stock{
+    text-align: center;
 
+}
