@@ -23,8 +23,8 @@ let Stock = document.getElementById('Stock')
 
 let buscador = document.getElementById("buscador")
 buscador.addEventListener('change', () => {
-    /*let Buscador = buscador.value*/
-    console.log(Buscador.toLowerCase())
+    /*let Buscador = buscador.value
+    console.log(Buscador.toLowerCase())*/
     let Filtro = arrayProd.filter(producto => producto.tipo.includes(buscador.value))
 
     Filtro.forEach(producto =>{
