@@ -33,8 +33,7 @@ body {
 }
 
 #container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: inline-block;
 }
 
 .card {
@@ -46,13 +45,47 @@ body {
     margin: 15px;
 }
 
-.buscar {
-    margin-left: 10px;
+.contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.385);
+    border-radius: 20px;
+    box-shadow: 10px 10px 16px 8px rgba(0,0,0,0.75);
+    border: 6px double #000000;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    text-align: center;
+    height: 5rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-#lista{
-width:85vw;
+.contenedor button{
+    font-weight: bold;
+    color: black;
+    margin:10px;
+}
+.contenedor h1{
+    margin: 50px;
+}
+span{
+    font-weight: bold;
+    margin: 50px;
+}
+.buscar {
+    width: 200px;
+    margin: 10px 0px 0px 10px;
+}
+
+#prodDiv {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 
 }
+
 .boton {
     background-color: black;
     box-shadow: 6px 6px 13px 1px rgba(0, 0, 0, 0.75);

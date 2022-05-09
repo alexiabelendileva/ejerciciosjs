@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
     <!-- GOOGLE FONTs -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <!-- FONT AWESOME -->
@@ -31,17 +31,17 @@
             <li class="nav-item">
                 <a class="nav-link" href="index.html">FORMULARIO</a>
             </li>
-            <form class="form-inline my-2 my-lg-0  buscar">
-                <input class="form-control mr-sm-2" id="buscador" type="search" placeholder="Search"
-                    aria-label="Search">
-                <button class="btn btn-outline-danger my-2 my-sm-0" type="">Search</button>
-            </form>
+
+            <input class="form-control mr-sm-2  buscar" id="buscaProd" type="search" placeholder="Search"
+                aria-label="Search">
+            <button class="btn btn-outline-danger my-2 my-sm-0" id="buttonSearch" type="">Search</button>
+
         </ul>
     </nav>
     <!--cards-->
     <div class="animate__animated animate__backInDown" id="container">
         <div class="card" id="card" style="width: 18rem;">
-            <img class="card-img-top" src="..\img.webp" alt="Card image cap">
+            <img class="card-img-top" src="img/img.webp" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Producto</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -49,59 +49,48 @@
                 <button href="#" id="botoncart" class="btn btn-primary boton">Agregar al carrito</button>
             </div>
         </div>
-        <div class="animate__animated animate__backInDown" id="container">
-            <div class="card" id="card" style="width: 18rem;">
-                <img class="card-img-top" src="..\img.webp" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Producto</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+    </div>
+    <div class="animate__animated animate__backInDown" id="container">
+        <div class="card" id="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/img.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Producto</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
-                    <button href="#" id="botoncart" class="btn btn-primary boton">Agregar al carrito</button>
-                </div>
-            </div>
-            <div class="card" id="card" style="width: 18rem;">
-                <img class="card-img-top" src="..\img.webp" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Producto</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <button href="#" id="botoncart" class="btn btn-primary boton">Agregar al carrito</button>
-                </div>
-            </div>
-            <div class="card" id="card" style="width: 18rem;">
-                <img class="card-img-top" src="..\img.webp" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Producto</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <button href="#" id="botoncart" class="btn btn-primary boton">Agregar al carrito</button>
-                </div>
+                <button href="#" id="botoncart" class="btn btn-primary boton">Agregar al carrito</button>
             </div>
         </div>
     </div>
-    <table id="lista" class="table table-dark animate__animated animate__backInDown">
-        <thead>
-            <tr>
-                    <th scope="col">Producto</th>
-                    <th scope="col">Precio</th>
-                    <th scope="col">Stock</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-
-                </tr>
-                <tr>
-
-                </tr>
-                <tr>
-
-
-                </tr>
-            </tbody>
-    </table>
-
-        <script src="script.js"></script>
+    <div class="animate__animated animate__backInDown" id="container">
+        <div class="card" id="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/img.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Producto</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                <button href="#" id="botoncart" class="btn btn-primary boton">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+    <div class="animate__animated animate__backInDown" id="container">
+        <div class="card" id="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/img.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Producto</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                <button href="#" id="botoncart" class="btn btn-primary boton">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor py-5 " id="contenedor">
+        <h1>Contador</h1>
+        <button class="btn btn-info" id="botonAumentar">+1</button>
+        <button class="btn btn-danger" id="botonDisminuir">-1</button>
+        <h4><span id="span">0</span></h4>
+    </div>
+    <div id="prodDiv"></div>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
