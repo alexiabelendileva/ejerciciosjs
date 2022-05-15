@@ -91,7 +91,9 @@ span{
     box-shadow: 6px 6px 13px 1px rgba(0, 0, 0, 0.75);
     border: black;
 }
-
+textarea{
+    resize:none
+}
 .card-body {
     background: none;
     border: none;
