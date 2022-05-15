@@ -1,15 +1,16 @@
-//buscador
-
-let buscador = document.getElementById('buscador')
+/*let buscador = document.getElementById('buscador')
 
 buscador.addEventListener('input', ()=>{
     console.log(buscador.value)
-})
+})*/
 
-//
+
 let form = document.getElementById('idForm')
-let arrayContacto = []
+
+let arrayContacto = JSON.parse(localStorage.getItem('cliente')) ?? []
+
 document.getElementById('boton1').addEventListener('click', (e) => {
+    localStorage.setItem('cliente', JSON.stringify(arrayContacto))
 })
 form.addEventListener('submit', (e) => {
     e.preventDefault()

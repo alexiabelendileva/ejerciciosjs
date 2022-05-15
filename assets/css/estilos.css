@@ -50,7 +50,7 @@ body {
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.385);
     border-radius: 20px;
-    box-shadow: 10px 10px 16px 8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 16px 8px rgba(0, 0, 0, 0.75);
     border: 6px double #000000;
     color: rgb(255, 255, 255);
     display: flex;
@@ -62,18 +62,22 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.contenedor button{
+
+.contenedor button {
     font-weight: bold;
     color: black;
-    margin:10px;
+    margin: 10px;
 }
-.contenedor h1{
+
+.contenedor h1 {
     margin: 50px;
 }
-span{
+
+span {
     font-weight: bold;
     margin: 50px;
 }
+
 .buscar {
     width: 200px;
     margin: 10px 0px 0px 10px;
@@ -91,9 +95,11 @@ span{
     box-shadow: 6px 6px 13px 1px rgba(0, 0, 0, 0.75);
     border: black;
 }
-textarea{
-    resize:none
+
+textarea {
+    resize: none
 }
+
 .card-body {
     background: none;
     border: none;
@@ -146,9 +152,25 @@ ul {
     display: block;
 }
 
-.contact-form form p {
+.contact-form form div {
     margin: 0;
     padding: 1em;
+}
+
+.contact-info li a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.contact-info li a:hover {
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgba(255, 0, 0, 0.416);
+    color: white;
+    border-radius: 15px;
+    transition: ease 1s;
+
 }
 
 .contact-form form .block {
