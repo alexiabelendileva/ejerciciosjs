@@ -1,0 +1,58 @@
+[
+  {
+    "precio": 680,
+    "id": 1,
+    "title": "Camión",
+    "stock":13,
+    "thumbnailUrl": "https://http2.mlstatic.com/D_NQ_NP_839834-MLA48290554681_112021-O.webp"
+  },
+  {
+    "precio": 390,
+    "id": 2,
+    "title": "Peluche Saiki",
+    "stock":18,
+    "thumbnailUrl": "https://i.etsystatic.com/26353569/r/il/a1a9a7/3539958263/il_570xN.3539958263_24bz.jpg"
+  },
+  {
+    "precio": 450,
+    "id": 3,
+    "title": "Maceta",
+    "stock": 21,
+    "thumbnailUrl": "https://cf.shopee.com.ar/file/dbe555f32a0ad97c37d77e803f6b8534"
+  },
+  {
+    "precio": 240,
+    "id": 4,
+    "title": "Botella",
+    "stock": 32,
+    "thumbnailUrl": "https://img.lojasrenner.com.br/item/552280733/zoom/1.jpg"
+  },
+  {
+    "precio": 760,
+    "id": 5,
+    "title": "Taza",
+    "stock": 25,
+    "thumbnailUrl": "https://d22fxaf9t8d39k.cloudfront.net/632b1d4bcabf6ade17bd00ea05371485fe6c0c001a564bc137ea5ae1d564eb5f107218.jpeg"
+  },
+  {
+    "precio": 1370,
+    "id": 6,
+    "title": "Remera Hanamichi",
+    "stock": 23,
+    "thumbnailUrl": "http://d3ugyf2ht6aenh.cloudfront.net/stores/001/373/871/products/hanamichi-sakuragi-ii11-45eecaef646eb37a6916359944747135-640-0.jpg"
+  },
+  {
+    "precio": 3520,
+    "id": 7,
+    "title": "Conjunto de baloncesto Seirin - Kuroko no Basket",
+    "stock": 15,
+    "thumbnailUrl": "https://ae01.alicdn.com/kf/H3fef53531f48482b80790912c4eee6c1N/Conjunto-de-Jersey-y-pantalones-cortos-de-baloncesto-para-Cosplay-ropa-de-escuela-secundaria-Kuroko-no.jpg_Q90.jpg_.webp"
+  },
+  {
+    "precio": 2985,
+    "id": 8,
+    "title": "Buzo Bakugo",
+    "stock": 12,
+    "thumbnailUrl": "https://http2.mlstatic.com/D_NQ_NP_640022-MLA49629675784_042022-O.webp"
+  }
+]

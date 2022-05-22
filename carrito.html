@@ -1,133 +1,103 @@
-<!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Website</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito de compras</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="assets/css/estilos.css">
-    <!-- GOOGLE FONTs -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- ANIMATE CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-</head>
+<link rel="stylesheet" href="estilos.css">
+  <!-- GOOGLE FONTs -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 <body>
-    <!--nav-->
-    <nav class="animate__animated animate__backInDown">
+      <!--nav-->
+      <nav class="animate__animated animate__backInDown">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="carrito.html">CARRITO</a>
+                <a class="nav-link" href="carrito2.html">CARRITO</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="index.html">FORMULARIO</a>
             </li>
-
-            <input class="form-control mr-sm-2  buscar" id="buscaProd" type="search" placeholder="Search"
-                aria-label="Search">
-            <button class="btn btn-outline-danger my-2 my-sm-0" id="buttonSearch" type="">Search</button>
-
         </ul>
     </nav>
-    <!--cards-->
-    <div class="animate__animated animate__backInDown" id="container">
-        <div class="card" id="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/img.webp" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Camión</h5>
-                <p class="card-text">$680.00</p>
-                <button href="#" id="boton1" class="btn btn-primary boton">Agregar al carrito</button>
-            </div>
+  <div class="container  animate__animated animate__backInDown">
+    <h1>Carrito</h1>
+    <hr>
+    <div class="row" id="cards"></div>
+  </div>
+  <template id="template-card">
+    <div class="col-12 mb-2 col-md-4">
+      <div class="card">
+        <img src="" alt="" class="img-card-top">
+        <div class="card-body">
+          <h5>Titulo</h5>
+          <p>precio</p>
+          <button class="btn btn-dark">Agregar al carrito</button>
         </div>
+      </div>
     </div>
-    <div class="animate__animated animate__backInDown" id="container">
-        <div class="card" id="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/jjk.webp" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Peluche JJK</h5>
-                <p class="card-text">$390.00</p>
-                <button href="#" id="boton2" class="btn btn-primary boton">Agregar al carrito</button>
-            </div>
-        </div>
-    </div>
-    <div class="animate__animated animate__backInDown" id="container">
-        <div class="card" id="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/sm.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Pelota Spider-Man</h5>
-                <p class="card-text">$520.00</p>
-                <button href="#" id="boton3" class="btn btn-primary boton">Agregar al carrito</button>
-            </div>
-        </div>
-    </div>
-    <div class="animate__animated animate__backInDown" id="container">
-        <div class="card" id="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/maceta.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Maceta</h5>
-                <p class="card-text">$450.00</p>
-                <button href="#" id="boton4" class="btn btn-primary boton">Agregar al carrito</button>
-            </div>
-        </div>
-    </div>
-    <div class="animate__animated animate__backInDown" id="container">
-        <div class="card" id="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/botella.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Botella</h5>
-                <p class="card-text">$240.0</p>
-                <button href="#" id="boton5" class="btn btn-primary boton">Agregar al carrito</button>
-            </div>
-        </div>
-    </div>
-    <div class="animate__animated animate__backInDown" id="container">
-        <div class="card" id="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/taza.jpeg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Taza</h5>
-                <p class="card-text">$760.00</p>
-                <button href="#" id="boton6" class="btn btn-primary boton">Agregar al carrito</button>
-            </div>
-        </div>
-    </div>
-    <div class="animate__animated animate__backInDown" id="container">
-        <div class="card" id="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/remera.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Remera Hanamichi</h5>
-                <p class="card-text">$1370.00</p>
-                <button href="#" id="boton7" class="btn btn-primary boton">Agregar al carrito</button>
-            </div>
-        </div>
-    </div>
-    <div class="animate__animated animate__backInDown" id="container">
-        <div class="card" id="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/buzo.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Buzo Bakugo</h5>
-                <p class="card-text">$2985.00</p>
-                <button href="#" id="boton8" class="btn btn-primary boton">Agregar al carrito</button>
-            </div>
-        </div>
-    </div>
+  </template>
 
-    <div class="contenedor py-5 " id="contenedor">
-        <h1>Contador</h1>
-        <button class="btn btn-info" id="botonAumentar">+1</button>
-        <button class="btn btn-danger" id="botonDisminuir">-1</button>
-        <h4><span id="span">0</span></h4>
-    </div>
-    <div id="prodDiv"></div>
-    <script src="../assets/js/script.js"></script>
+  <table class="table animate__animated animate__backInDown">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Item</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Acción</th>
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody id="items"></tbody>
+    <tfoot>
+      <tr id="footer">
+        <th class="th" scope="row" colspan="5">Carrito vacío - comience a comprar</th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <template id="template-carrito">
+    <tr>
+      <th scope="row">id</th>
+      <td>Café</td>
+      <td>1</td>
+      <td>
+        <button class="btn btn-info btn-sm">
+          +
+        </button>
+        <button class="btn btn-danger btn-sm">
+          -
+        </button>
+      </td>
+      <td>$ <span>500</span></td>
+    </tr>
+  </template>
+  <template id="template-footer">
+    <th scope="row" colspan="2">Total productos</th>
+    <td>10</td>
+    <td>
+      <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+        Vaciar Carrito
+      </button>
+    </td>
+    <td class="font-weight-bold">$ <span>5000</span></td>
+  </template>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
