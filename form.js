@@ -12,6 +12,7 @@ let arrayContacto = JSON.parse(localStorage.getItem('cliente')) ?? []
 document.getElementById('boton1').addEventListener('click', (e) => {
     localStorage.setItem('cliente', JSON.stringify(arrayContacto))
 })
+
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log(e.target)
@@ -25,4 +26,9 @@ form.addEventListener('submit', (e) => {
     arrayContacto.push(user)
     console.log(arrayContacto)
     form.reset()
+    Swal.fire({
+        icon: 'success',
+        title: 'Has enviado el formulario con éxito',
+        text: 'Mientas esperas nuestra respuesta, puedes visitar el sitio web y revisar las ofertas increíbles!',
+      })
 })

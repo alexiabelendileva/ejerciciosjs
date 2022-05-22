@@ -9,7 +9,7 @@ let carrito = {}
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchData()
-    if(localStorage.getItem('carrito')){
+    if (localStorage.getItem('carrito')) {
         carrito = JSON.parse(localStorage.getItem('carrito'))
         mostrarCart()
     }
@@ -54,6 +54,7 @@ const setCarrito = objeto => {
         precio: objeto.querySelector('p').textContent,
         cantidad: 1
     }
+
     if (carrito.hasOwnProperty(producto.id)) {
         producto.cantidad = carrito[producto.id].cantidad + 1
     }
@@ -87,6 +88,16 @@ const mostrarFooter = () => {
         footer.innerHTML = `
         <th scope="row" colspan="5">Carrito vacío - comience a comprar</th>
         `
+        Swal.fire({
+            title: 'Tu carrito está vacío',
+            text: '¡Comienza agregando algún producto!',
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          })
         return
     }
     const nCantidad = Object.values(carrito).reduce((acc, {
@@ -96,7 +107,7 @@ const mostrarFooter = () => {
         cantidad,
         precio
     }) => acc + cantidad * precio, 0)
-    
+
     templateFooter.querySelectorAll('td')[0].textContent = nCantidad
     templateFooter.querySelector('span').textContent = nPrecio
 
@@ -113,19 +124,23 @@ const mostrarFooter = () => {
 
 const btnAccion = e => {
     //+
-    if(e.target.classList.contains('btn-info')){
+    if (e.target.classList.contains('btn-info')) {
         const producto = carrito[e.target.dataset.id]
         producto.cantidad++
-        carrito[e.target.dataset.id] = {...producto}
+        carrito[e.target.dataset.id] = {
+            ...producto
+        }
         mostrarCart()
     }
-    if(e.target.classList.contains('btn-danger')){
+    //-
+    if (e.target.classList.contains('btn-danger')) {
         const producto = carrito[e.target.dataset.id]
         producto.cantidad--
-        if(producto.cantidad === 0){
+        if (producto.cantidad === 0) {
             delete carrito[e.target.dataset.id]
         }
         mostrarCart()
     }
+
     e.stopPropagation
 }
