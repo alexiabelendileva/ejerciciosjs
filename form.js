@@ -9,9 +9,7 @@ let form = document.getElementById('idForm')
 
 let arrayContacto = JSON.parse(localStorage.getItem('cliente')) ?? []
 
-document.getElementById('boton1').addEventListener('click', (e) => {
-    localStorage.setItem('cliente', JSON.stringify(arrayContacto))
-})
+
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -31,4 +29,5 @@ form.addEventListener('submit', (e) => {
         title: 'Has enviado el formulario con éxito',
         text: 'Mientas esperas nuestra respuesta, puedes visitar el sitio web y revisar las ofertas increíbles!',
       })
+      localStorage.setItem('cliente', JSON.stringify(arrayContacto))
 })
