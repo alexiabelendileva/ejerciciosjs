@@ -44,8 +44,16 @@ body {
     justify-content: space-evenly;
     margin: 15px;
 }
-
-
+#finalizar-compra{
+    width: 200px;
+    height: 100px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.botoncompra{
+    text-align: center;
+}
 
 .contenedor button {
     font-weight: bold;

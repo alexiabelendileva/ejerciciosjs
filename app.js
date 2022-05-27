@@ -1,3 +1,4 @@
+//.document
 const cards = document.getElementById('cards')
 const items = document.getElementById('items')
 const footer = document.getElementById('footer')
@@ -5,8 +6,10 @@ const templateCard = document.getElementById('template-card').content
 const fragment = document.createDocumentFragment()
 const templateFooter = document.getElementById('template-footer').content
 const templateCarrito = document.getElementById('template-carrito').content
+
 let carrito = {}
 
+//localstorage +
 document.addEventListener('DOMContentLoaded', () => {
     fetchData()
     if (localStorage.getItem('carrito')) {
@@ -81,7 +84,7 @@ const mostrarCart = () => {
 
     localStorage.setItem('carrito', JSON.stringify(carrito))
 }
-
+//cuando se vacía el carrito muestra el msj
 const mostrarFooter = () => {
     footer.innerHTML = ''
     if (Object.keys(carrito).length === 0) {
@@ -92,12 +95,12 @@ const mostrarFooter = () => {
             title: 'Tu carrito está vacío',
             text: '¡Comienza agregando algún producto!',
             showClass: {
-              popup: 'animate__animated animate__fadeInDown'
+                popup: 'animate__animated animate__fadeInDown'
             },
             hideClass: {
-              popup: 'animate__animated animate__fadeOutUp'
+                popup: 'animate__animated animate__fadeOutUp'
             }
-          })
+        })
         return
     }
     const nCantidad = Object.values(carrito).reduce((acc, {
@@ -144,3 +147,22 @@ const btnAccion = e => {
 
     e.stopPropagation
 }
+const finalizarCompra = document.getElementById('finalizar-compra')
+finalizarCompra.addEventListener('click', () => {
+    if (Object.values(carrito).length != 0) {
+        Swal.fire({
+            title: 'Próximamente realizaremos la página de compras, muchas gracias <3',
+            width: 600,
+            padding: '3em',
+            color: '#716add',
+            background: '#fff url(/images/trees.png)',
+            backdrop: `
+              rgba(0,0,123,0.4)
+              url("https://c.tenor.com/-AyTtMgs2mMAAAAi/nyan-cat-nyan.gif")
+              left top
+              no-repeat
+            `
+        })
+    }
+
+})

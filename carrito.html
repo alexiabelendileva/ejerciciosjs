@@ -8,32 +8,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Carrito de compras</title>
+  <!-- Include the Dark theme -->
+<link rel="stylesheet" href="@sweetalert2/theme-dark/dark.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="estilos.css">
   <!-- GOOGLE FONTs -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!-- ANIMATE CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 <body>
-      <!--nav-->
-      <nav class="animate__animated animate__backInDown">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link" href="carrito2.html">CARRITO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">FORMULARIO</a>
-            </li>
-        </ul>
-    </nav>
+  <!--nav-->
+  <nav class="animate__animated animate__backInDown">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="carrito.html">CARRITO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">FORMULARIO</a>
+      </li>
+    </ul>
+  </nav>
   <div class="container  animate__animated animate__backInDown">
     <h1>Carrito</h1>
     <hr>
@@ -94,9 +96,20 @@
         Vaciar Carrito
       </button>
     </td>
+
     <td class="font-weight-bold">$ <span>5000</span></td>
   </template>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.15/dist/sweetalert2.all.min.js"></script>
+<div class="botoncompra animate__animated animate__backInDown">
+  <td>
+    <button class="btn btn-warning btn-sm" id="finalizar-compra">Finalizar compra</button>
+  </td>
+</div>
+  <br>
+  <br>
+
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2/dist/sweetalert2.min.js"></script>
   <script src="app.js"></script>
 </body>
 
